@@ -1,0 +1,86 @@
+@keyframes moveText {
+  from {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+body {
+  background-color: #f4f9ff !important;
+  user-select: none;
+}
+body form {
+  text-align: center;
+  padding: 30px 0px;
+}
+body #content table {
+  margin: 0 auto;
+}
+body #content table th {
+  padding-left: 15px;
+}
+body #content table td {
+  padding: 15px;
+  width: 220px;
+}
+body #content table td:first-child,
+body #content table td:last-child {
+  width: 80px;
+}
+body #content table img {
+  border: 2px solid blue;
+}
+body #content table .hidden {
+  display: none;
+}
+body #content table .show {
+  display: table-row !important;
+}
+body #content table .bgRow {
+  background-color: #dde7ff;
+}
+body #content table .bgRow:nth-child(odd) td {
+  padding-top: 0;
+}
+body #content table .songName {
+  font-weight: bold;
+  font-size: 21px;
+  margin-bottom: 5px;
+  color: gray;
+  animation: moveText 5s linear infinite;
+}
+body #content table .small {
+  font-size: 12px;
+  margin: 0;
+}
+body #content table .vAlign {
+  vertical-align: top;
+}
+body #content table .track i {
+  transition: color .4s;
+}
+body #content table .track:hover {
+  cursor: pointer;
+}
+body #content table .track:hover i {
+  color: #4284f4;
+}
+body #anchor {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  width: 40px;
+  height: 40px;
+  transition: .5s;
+}
+body #anchor a {
+  color: #c3d0ec;
+  transition: color .4s;
+}
+body #anchor a:hover {
+  color: #9ba8c4;
+}
